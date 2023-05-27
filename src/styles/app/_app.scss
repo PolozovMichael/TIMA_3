@@ -1,0 +1,15 @@
+:root {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+}
+
+html {
+  @extend %webkit-scrollbar;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+

@@ -1,0 +1,94 @@
+// [color - variables]
+// branding
+$primary-color: #26C17E;
+$secondary-color: #667081;
+$dark-color: #222935;
+$light-color: #FFFFFF;
+$silver-color: #EEEEEE;
+$error-color: #F44336;
+
+// font size
+$fs-xxxsmall: 0.5rem;
+$fs-xxsmall: 0.8rem;
+$fs-xsmall: 1.2rem;
+$fs-small: 1.4rem;
+$fs-little: 1.6rem;
+$fs-regular: 1.8rem; // -> base size
+$fs-medium: 2rem;
+$fs-large: 2.5rem;
+$fs-xlarge: 2.8rem;
+$fs-xxlarge: 3.2rem;
+$fs-xxxlarge: 4rem;
+
+// webkit
+$webkit-bg: rgba($primary-color, .8);
+
+// font family
+$ff-semibold: "OpenSansSemiBold", sans-serif;
+$ff-bold: "OpenSansBold", sans-serif;
+$ff-medium: "OpenSansMedium", sans-serif;
+$ff-regular: "OpenSansRegular", sans-serif;
+$ff-light: "OpenSansLight", sans-serif;
+$ff-code: Consolas, Monaco, "Lucida Console", monospace;
+
+// font weights
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 600;
+
+// widths / heights
+$panel-desktop-width: 25rem;
+$panel-mobile-width: 6rem;
+$hamburger-width: $fs-xxlarge;
+$greeting-max-width: 65rem;
+$card-width: 28rem;
+$label-width: 10rem;
+$button-width: 11rem;
+$hamburger-height: $fs-xxlarge;
+
+// paddings
+$main-padding: $fs-regular $fs-xxxlarge;
+$panel-padding: $fs-little;
+$greeting-padding: 0 $fs-little;
+$button-padding: $fs-xxsmall $fs-medium;
+$block-padding: $fs-regular;
+$card-padding: $fs-regular $fs-large;
+$timeline-padding: $fs-little;
+$skills-item-padding: 0 $fs-xsmall;
+$input-padding: 0 $fs-xsmall;
+
+// margins
+$timeline-margin: $fs-medium;
+
+// gaps
+$nav-gap: 2 * $fs-regular;
+$panel-content-gap: 1.2 * $fs-xxxlarge;
+$item-gap: $fs-xsmall;
+$greeting-gap: $fs-large;
+$section-gap: $fs-xxxlarge;
+$component-gap: $fs-xxlarge;
+$feedback-gap: $fs-little;
+$feedback-reports-gap: $fs-regular;
+$skills-gap: $fs-xsmall;
+$form-gap: $fs-xxxsmall;
+
+// breakpoints
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 540px;
+$xs: 360px;
+
+// shadows
+$box-shadow-light: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.06);
+$box-shadow-medium: 0 8px 11px rgba(0, 0, 0, 0.1), 0 9px 12px rgba(0, 0, 0, 0.2);
+$text-shadow-light: $secondary-color 1px 1px 5px;
+
+// border
+$button-border-radius: $fs-xxxsmall;
+$secondary-border: 1px solid $secondary-color;
+$primary-border: 1px solid $primary-color;
+$skills-edit-border-radius: $fs-xxsmall;
+$input-border-radius: $fs-xxsmall;

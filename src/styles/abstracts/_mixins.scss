@@ -1,0 +1,34 @@
+// media queries
+@mixin breakpoint($width) {
+  @media screen and (max-width: $width) {
+    @content
+  }
+}
+
+// flex
+@mixin flex-row {
+  display: flex;
+}
+
+@mixin flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-row {
+  display: flex;
+}
+
+@mixin flex-column {
+  @include flex-row;
+  flex-direction: column;
+}
+
+@mixin container {
+  @include flex-row;
+  gap: $item-gap;
+  flex-wrap: wrap;
+
+  font-family: $ff-regular;
+  font-size: $fs-regular;
+}
