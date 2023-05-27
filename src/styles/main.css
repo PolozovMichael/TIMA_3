@@ -58,24 +58,24 @@ button {
 }
 
 @font-face {
-  font-family: "OpenSansSemiBold";
-  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-family: "SoraExtraBold";
+  src: url("/fonts/Sora-ExtraBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSansBold";
-  src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-family: "SoraBold";
+  src: url("/fonts/Sora-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSansMedium";
-  src: url("/fonts/OpenSans-Medium.ttf") format("truetype");
+  font-family: "SoraMedium";
+  src: url("/fonts/Sora-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSansRegular";
-  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-family: "SoraRegular";
+  src: url("/fonts/Sora-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSansLight";
-  src: url("/fonts/OpenSans-Light.ttf") format("truetype");
+  font-family: "SoraLight";
+  src: url("/fonts/Sora-Light.ttf") format("truetype");
 }
 h1,
 h2,
@@ -108,7 +108,7 @@ html ::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 html ::-webkit-scrollbar-thumb:hover {
-  background-color: #26C17E;
+  background-color: #6EFCB1;
 }
 
 :root {
@@ -116,9 +116,87 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-  height: 100vh;
+  height: 100vh !important;
   margin: 0;
   padding: 0;
+  font-size: 1.6rem;
+  font-family: "SoraRegular", sans-serif;
+}
+
+.app {
+  background: url("/images/appBackground.png");
+  background-size: cover;
+}
+.app main {
+  margin-left: 32rem;
+  padding: 3.4rem 0;
+}
+
+.aside {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30rem;
+  height: 100vh;
+  padding-top: 2.8rem;
+}
+.aside__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1.6rem;
+}
+.aside__title {
+  color: #FFFFFF;
+}
+.aside__title--bold {
+  font-size: 2.4rem;
+  font-family: "SoraMedium", sans-serif;
+  font-weight: 300;
+}
+.aside__title--small {
+  color: #CCCCCC;
+}
+
+.sidebar {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.8rem 2.8rem 0 0;
+  border-radius: 0 3rem 3rem 0;
+  border-top: 1px solid;
+  border-image-source: linear-gradient(368deg, rgba(255, 255, 255, 0.2) 2.09%, rgba(255, 255, 255, 0) 99.19%);
+  box-shadow: 5px -5px 4px 0px rgba(0, 0, 0, 0.1490196078), 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  background: linear-gradient(370deg, rgba(215, 255, 233, 0.135) -107.64%, rgba(196, 34, 253, 0.216753) -107.64%, rgba(255, 255, 255, 0.205) -107.61%, rgba(253, 255, 254, 0.1) -91.28%, rgba(255, 255, 255, 0) 116.63%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(5px -5px 4px rgba(0, 0, 0, 0.15));
+  backdrop-filter: blur(12.5px);
+}
+.sidebar__item {
+  display: grid;
+  grid-template-columns: 3rem 100%;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.6rem;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+.sidebar__item--active {
+  background: linear-gradient(450deg, rgba(38, 226, 179, 0) 5%, #448c7a 95%);
+  font-weight: 600;
+  color: #6EFCB1;
+}
+.sidebar__icon-wrapper {
+  align-items: center;
+  justify-content: center;
+}
+.sidebar__title {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

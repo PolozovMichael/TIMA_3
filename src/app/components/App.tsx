@@ -1,3 +1,5 @@
+import { lazy, Suspense } from "react";
+
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
@@ -7,10 +9,12 @@ import {
   persistor,
 } from "../../redux";
 
-import AppRouter from "./AppRouter";
+import AppAside from "./AppAside/AppAside";
 
-import "../../styles/main.css";
-import AppAside from "./AppAside";
+const LazyAppRouter = lazy(() => {
+  return import("./AppRouter.tsx");
+});
+
 
 const App = () => {
   return (
@@ -20,7 +24,9 @@ const App = () => {
           <PersistGate persistor={persistor}>
             <AppAside />
             <main>
-              <AppRouter />
+              <Suspense fallback={<div>Loading...</div>}>
+                <LazyAppRouter />
+              </Suspense>
             </main>
           </PersistGate>
         </Provider>

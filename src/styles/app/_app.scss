@@ -7,9 +7,20 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 100vh!important;
   margin: 0;
   padding: 0;
+
+  font-size: $fs-regular;
+  font-family: $ff-regular;
 }
 
+.app {
+  background: url("/images/appBackground.png");
+  background-size: cover;
 
+  main {
+    margin-left: $aside-width + 2rem;
+    padding: $fs-xxxlarge 0;
+  }
+}
