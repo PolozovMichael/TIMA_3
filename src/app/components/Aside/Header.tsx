@@ -1,6 +1,6 @@
 import Logo from "/images/logo.svg";
 
-const AppAsideHeader = () => {
+const Header = () => {
   return (
     <div className="aside__header">
       <img
@@ -8,11 +8,11 @@ const AppAsideHeader = () => {
         alt="project logo"
       />
       <p className="aside__title">
-        <span className="aside__title--bold">Greenlfield</span>
+        <span className="aside__title--bold">Greenfield</span>
         <span className="aside__title--small">lab</span>
       </p>
     </div>
   );
 }
 
-export default AppAsideHeader;
+export default Header;

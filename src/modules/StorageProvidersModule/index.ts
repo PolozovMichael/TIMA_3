@@ -1,1 +1,1 @@
-export { default as StorageProvidersModule } from "./components/StorageProvidersModule";
+export { default as StorageProvidersModule } from "./components/Module";

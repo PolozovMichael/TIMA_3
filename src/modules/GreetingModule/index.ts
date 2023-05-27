@@ -1,1 +1,1 @@
-export { default as GreetingModule } from "./components/GreetingModule";
+export { default as GreetingModule } from "./components/Module";

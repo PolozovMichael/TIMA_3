@@ -9,10 +9,10 @@ import {
   persistor,
 } from "../../redux";
 
-import AppAside from "./AppAside/AppAside";
+import Aside from "./Aside/Aside";
 
 const LazyAppRouter = lazy(() => {
-  return import("./AppRouter.tsx");
+  return import("./Router.tsx");
 });
 
 
@@ -22,7 +22,7 @@ const App = () => {
       <BrowserRouter>
         <Provider store={store}>
           <PersistGate persistor={persistor}>
-            <AppAside />
+            <Aside />
             <main>
               <Suspense fallback={<div>Loading...</div>}>
                 <LazyAppRouter />

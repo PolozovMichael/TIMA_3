@@ -1,12 +1,12 @@
 import { NavLink, useLocation } from "react-router-dom";
 
-import { sidebarItems } from "../../data/sidebarItems";
+import { navbarItems } from "../../data/navbarItems";
 
 interface navLinkProps {
   isActive: boolean;
 }
 
-const AppAsideSidebar = () => {
+const Navbar = () => {
   const { pathname } = useLocation();
 
   function isActiveIcon(
@@ -18,12 +18,12 @@ const AppAsideSidebar = () => {
   }
 
   function isActiveItem({ isActive }: navLinkProps) {
-    return isActive ? "sidebar__item sidebar__item--active" : "sidebar__item";
+    return isActive ? "navbar__item navbar__item--active" : "navbar__item";
   }
 
   return (
-    <div className="sidebar">
-      {sidebarItems.map(({
+    <div className="navbar">
+      {navbarItems.map(({
         title,
         path,
         primaryIcon,
@@ -34,14 +34,14 @@ const AppAsideSidebar = () => {
           className={isActiveItem}
           to={path}
         >
-          <div className="sidebar_icon-wrapper">
+          <div className="navbar_icon-wrapper">
             <img
-              className="sidebar__icon"
+              className="navbar__icon"
               src={isActiveIcon(path, primaryIcon, secondaryIcon)}
-              alt="sidebar item icon"
+              alt="navbar item icon"
             />
           </div>
-          <p className="sidebar__title">
+          <p className="navbar__title">
             {title}
           </p>
         </NavLink>
@@ -50,4 +50,4 @@ const AppAsideSidebar = () => {
   );
 }
 
-export default AppAsideSidebar;
+export default Navbar;

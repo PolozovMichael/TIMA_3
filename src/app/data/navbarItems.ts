@@ -11,7 +11,7 @@ import storageSecondaryIcon from "/icons/storageSecondaryIcon.png";
 import settingsPrimaryIcon from "/icons/settingsPrimaryIcon.png";
 import settingsSecondaryIcon from "/icons/settingsSecondaryIcon.png";
 
-const sidebarItems = [
+export const navbarItems = [
   {
     title: "Home",
     path: "/home",
@@ -37,8 +37,8 @@ const sidebarItems = [
     secondaryIcon: chartSecondaryIcon,
   },
   {
-    title: "Storage Provider",
-    path: "/storage-provider",
+    title: "Storage Providers",
+    path: "/storage-providers",
     primaryIcon: storagePrimaryIcon,
     secondaryIcon: storageSecondaryIcon,
   },
@@ -49,5 +49,3 @@ const sidebarItems = [
     secondaryIcon: settingsSecondaryIcon,
   },
 ];
-
-export { sidebarItems };

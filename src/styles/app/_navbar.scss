@@ -1,37 +1,4 @@
-.aside {
-  position: fixed;
-  top: 0;
 
-  @include flex-column;
-  gap: 2rem;
-
-  width: $aside-width;
-  height: 100vh;
-  padding-top: $fs-xxlarge;
-
-  &__header {
-    @include flex-row;
-    @include flex-center;
-    gap: $fs-xxxsmall;
-
-    padding: 0 $fs-regular;
-  }
-
-  &__title {
-    color: $light-color;
-
-    &--bold {
-      font-size: $fs-xxlarge;
-      font-family: $ff-medium;
-      font-weight: $fw-light;
-    }
-
-    &--small {
-      font-size: $fs-large;
-      color: $silver-color;
-    }
-  }
-}
 .navbar {
   height: 100%;
 

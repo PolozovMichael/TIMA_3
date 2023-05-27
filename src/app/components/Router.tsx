@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 
 import { privateRoutes, publicRoutes } from "../data/routes";
 
-const AppRouter = () => {
+const Router = () => {
   // const { isAuth } = useAppSelector((state) => state.auth);
   const isAuth = true;
 
@@ -49,4 +49,4 @@ const AppRouter = () => {
   );
 }
 
-export default AppRouter;
+export default Router;
