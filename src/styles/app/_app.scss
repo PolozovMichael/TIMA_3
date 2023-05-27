@@ -7,6 +7,8 @@ html {
 }
 
 body {
+  //overflow-x: scroll;
+
   height: 100vh!important;
   margin: 0;
   padding: 0;
@@ -16,11 +18,18 @@ body {
 }
 
 .app {
+  //width: 100%;
   background: url("/images/appBackground.png");
   background-size: cover;
 
   main {
-    margin-left: $aside-width + 2rem;
-    padding: $fs-xxxlarge 0;
+    height: 100vh;
+    margin-left: $aside-width + 2vw;
+    width: 95vw - $aside-width;
+    padding: $fs-xxxlarge * 1.8 0;
   }
+}
+
+section {
+  width: 100%!important;
 }

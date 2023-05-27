@@ -1,3 +1,68 @@
 .greeting {
+  position: relative;
 
+  height: auto;
+
+  color: white;
+
+  &__background {
+    //top: -5rem;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__block {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__text {
+    @include flex-column;
+    justify-content: center;
+
+    height: 100%;
+    padding-left: 10rem;
+
+    color: $silver-color;
+
+    & > p, & > button {
+
+    }
+  }
+
+  &__title {
+    max-width: 100%;
+
+    font-family: $ff-medium;
+    font-size: 5rem;
+  }
+
+  &__gradient {
+    background: linear-gradient(96.9deg, #6EFCB1 44.6%, #5DE4FB 92.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__subtitle {
+    max-width: 80%;
+
+    font-size: 2rem;
+  }
+
+  &__button {
+    width: 30rem;
+    height: 6rem;
+
+    border-radius: 37px;
+
+    background: linear-gradient(96.89deg, #6EFCB1 10.16%, #60E9EB 114.85%);
+
+    font-family: $ff-medium;
+    font-size: 2.5rem;
+  }
 }

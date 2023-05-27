@@ -2,6 +2,10 @@ import { NavLink, useLocation } from "react-router-dom";
 
 import { sidebarItems } from "../../data/sidebarItems";
 
+interface navLinkProps {
+  isActive: boolean;
+}
+
 const AppAsideSidebar = () => {
   const { pathname } = useLocation();
 
@@ -13,7 +17,7 @@ const AppAsideSidebar = () => {
     return pathname === path ? primaryIcon : secondaryIcon;
   }
 
-  function isActiveItem({ isActive }) {
+  function isActiveItem({ isActive }: navLinkProps) {
     return isActive ? "sidebar__item sidebar__item--active" : "sidebar__item";
   }
 
