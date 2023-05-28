@@ -8,14 +8,14 @@ const Module = () => {
         image={GreetingPoster}
         title={
           <span>
-            BNB <span className="greeting__gradient">Greenfield</span> Exploring Dashboard"
+            BNB <span className="greeting__gradient">Greenfield</span> Exploring Dashboard
           </span>
         }
         subtitle="A blockchain explorer and analytics platform for BNB Greenfield."
       >
-        <button className="greeting__button">
-          EXPLORE
-        </button>
+        {/*<button className="greeting__button">*/}
+        {/*  EXPLORE*/}
+        {/*</button>*/}
       </BannerComponent>
     </section>
   );
