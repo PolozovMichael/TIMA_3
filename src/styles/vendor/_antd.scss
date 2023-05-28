@@ -17,9 +17,40 @@
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.2) !important;
 
     &:before {
-      background: transparent!important;
+      background: transparent !important;
     }
   }
+}
+
+.dashed {
+  .ant-table-cell {
+    border-right: 1px dashed rgba(255, 255, 255, 0.2) !important;
+
+    &:last-child {
+      border-right: none !important;
+    }
+
+    &:before {
+      background: transparent !important;
+    }
+  }
+
+  .ant-table-thead tr .ant-table-cell {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .ant-table-row {
+    .ant-table-cell {
+      border-bottom: none !important;
+    }
+
+    &:last-child {
+      .ant-table-cell {
+        border-bottom: none !important;
+      }
+    }
+  }
+
 }
 
 .ant-table {
@@ -68,7 +99,7 @@
 // pagination
 .ant-pagination {
   &-item {
-    border: none!important;
+    border: none !important;
 
     background: $dark-color !important;
 
@@ -77,7 +108,7 @@
     }
 
     &-active {
-      border: 1px solid $primary-color!important;
+      border: 1px solid $primary-color !important;
     }
   }
 
@@ -89,11 +120,11 @@
 
   &-disabled {
     svg {
-      color: $dark-color!important;
+      color: $dark-color !important;
     }
   }
 }
 
 .ant-typography {
-  color: $light-color!important;
+  color: $light-color !important;
 }

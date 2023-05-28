@@ -393,6 +393,25 @@ section {
   background: transparent !important;
 }
 
+.dashed .ant-table-cell {
+  border-right: 1px dashed rgba(255, 255, 255, 0.2) !important;
+}
+.dashed .ant-table-cell:last-child {
+  border-right: none !important;
+}
+.dashed .ant-table-cell:before {
+  background: transparent !important;
+}
+.dashed .ant-table-thead tr .ant-table-cell {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2) !important;
+}
+.dashed .ant-table-row .ant-table-cell {
+  border-bottom: none !important;
+}
+.dashed .ant-table-row:last-child .ant-table-cell {
+  border-bottom: none !important;
+}
+
 .ant-table {
   background: transparent !important;
   font-family: "SoraRegular", sans-serif !important;

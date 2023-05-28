@@ -1,7 +1,6 @@
 export interface DataType {
-  key: string;
-  moniker: string;
-  operator_address: string;
-  seal_address: string;
-  total_deposit: string;
+  owner: string;
+  bucket_name: string;
+  primary_sp_address: string;
+  payment_address: string;
 }
