@@ -14,3 +14,9 @@ It's a monitoring & tracking tool for BNB Greenfield Storage Providers.
 
 ## Installation
 
+```
+git clone https://github.com/PolozovMichael/TIMA_3.git
+cd TIMA_3
+npm install
+npm run dev
+```
