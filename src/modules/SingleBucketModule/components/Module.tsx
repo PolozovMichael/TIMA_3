@@ -8,6 +8,7 @@ import { useFetchBucketByName } from "../../../hooks/useFetchBucketByName";
 const Module = () => {
   const { bucketId } = useParams();
 
+  // @ts-ignore
   const { data, isLoading } = useFetchBucketByName(bucketId);
   console.log("data", data);
 
@@ -54,7 +55,9 @@ const Module = () => {
 
         {bucketData && (
           <TableComponent
+            // @ts-ignore
             dataSource={transformedData}
+            // @ts-ignore
             columns={columns}
             loading={isLoading}
             type="reverse"

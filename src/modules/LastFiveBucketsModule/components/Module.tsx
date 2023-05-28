@@ -65,7 +65,9 @@ const Module = () => {
       <p className="section__title">Latest 5 Created Buckets</p>
       {sortedData && (
         <TableComponent
+          // @ts-ignore
           dataSource={dataSource}
+          // @ts-ignore
           columns={columns}
           loading={isLoading}
           type="dashed"

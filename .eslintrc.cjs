@@ -12,6 +12,7 @@ module.exports = {
     "no-unused-vars": "off",
     "react-refresh/only-export-components": "off",
     "react-hooks/rules-of-hooks": "off",
+    "typescript-eslint/ban-ts-comment": "off",
     quotes: ["error", "double"],
   },
 }

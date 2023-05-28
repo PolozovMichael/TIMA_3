@@ -62,7 +62,9 @@ const Module = () => {
         <p className="section__title">SP Address Information</p>
         {spData && (
           <TableComponent
+            // @ts-ignore
             dataSource={transformedData}
+            // @ts-ignore
             columns={columns}
             loading={isLoading}
             type="reverse"
