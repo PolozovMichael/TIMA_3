@@ -2,9 +2,10 @@ import type { ColumnsType } from "antd/es/table";
 
 import { DataType } from "../data/interfaces";
 
-import useFetchSPS from "../../../hooks/useFetchSPS";
-import TableComponent from "../../../components/TableComponent";
+import { useFetchSPS } from "../../../hooks/useFetchSPS";
 import { useAddress } from "../../../hooks/useAddress";
+
+import TableComponent from "../../../components/TableComponent";
 import LoaderComponent from "../../../components/LoaderComponent";
 
 const Desk = () => {

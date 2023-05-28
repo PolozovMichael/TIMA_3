@@ -33,7 +33,7 @@ interface Pagination {
 
 const URL = "https://gnfd-testnet-fullnode-tendermint-us.bnbchain.org/greenfield/storage_providers?pagination.count_total=true&pagination.reverse=true";
 
-const useFetchSPS = (): {
+export const useFetchSPS = (): {
   data: SPSData | null
   isLoading: boolean
   error: any
@@ -73,5 +73,3 @@ const useFetchSPS = (): {
     refetch
   };
 }
-
-export default useFetchSPS;
