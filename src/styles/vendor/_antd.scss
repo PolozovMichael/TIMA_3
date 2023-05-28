@@ -53,6 +53,32 @@
 
 }
 
+.reverse {
+  .ant-table-thead > tr > td {
+    border: none !important;
+    background: red;
+  }
+
+  .ant-table-row {
+    .ant-table-cell:first-child {
+      color: $light-color!important;
+    }
+    &:last-child {
+      .ant-table-cell {
+        border-bottom: none !important;
+      }
+    }
+  }
+
+  .ant-table-cell {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2) !important;
+
+    &:before {
+      background: transparent !important;
+    }
+  }
+}
+
 .ant-table {
   background: transparent !important;
 
@@ -66,7 +92,13 @@
   }
 
   &-cell {
-    color: $primary-color;
+    &, a {
+      color: $primary-color !important;
+    }
+
+    a:hover {
+      color: $primary-hover-color !important;
+    }
   }
 
   &-cell-row-hover {

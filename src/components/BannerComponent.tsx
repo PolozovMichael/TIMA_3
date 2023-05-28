@@ -18,7 +18,7 @@ const BannerComponent: FC<BannerComponentProps> = ({
       <img
         className="banner__background"
         src={image}
-        alt="greeting bg"
+        alt="poster bg"
       />
 
       <div className="banner__block">

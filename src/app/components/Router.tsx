@@ -1,10 +1,16 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 
 import { useAppSelector } from "../../hooks/useAppSelector";
 import { privateRoutes, publicRoutes } from "../data/routes";
 
 const Router = () => {
+  const location = useLocation();
   const { isAuth } = useAppSelector((state) => state.auth);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <Routes>

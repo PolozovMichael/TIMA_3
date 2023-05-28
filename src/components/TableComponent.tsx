@@ -6,6 +6,7 @@ interface TableComponentProps {
   loading: boolean;
   type?: string,
   footer?: string;
+  pagination?: boolean;
 }
 
 const TableComponent = ({
@@ -14,6 +15,7 @@ const TableComponent = ({
   loading,
   type = "solid",
   footer,
+  pagination = true,
 }: TableComponentProps) => {
   return (
     <Table
@@ -23,7 +25,7 @@ const TableComponent = ({
       style={{ width: "100%" }}
       footer={() => footer}
       className={type}
-      pagination={{
+      pagination={pagination && {
         position: [ "bottomCenter" ],
         pageSize: 10,
       }}

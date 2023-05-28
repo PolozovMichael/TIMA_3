@@ -7,6 +7,7 @@ import { useAddress } from "../../../hooks/useAddress";
 
 import TableComponent from "../../../components/TableComponent";
 import LoaderComponent from "../../../components/LoaderComponent";
+import { Link } from "react-router-dom";
 
 const Desk = () => {
   const {
@@ -19,6 +20,7 @@ const Desk = () => {
       title: "SP Name",
       dataIndex: "moniker",
       key: "moniker",
+      render: (text) => <Link to={`/storage-providers/${text}`}>{text}</Link>,
     },
     {
       title: "Operator Address",
@@ -50,7 +52,12 @@ const Desk = () => {
           </div>
         )
       },
-    }
+    },
+    {
+      title: "Endpoint",
+      dataIndex: "endpoint",
+      key: "endpoint",
+    },
   ];
   const dataSource: null | DataType[] = data && data?.sps.map(({
     description,

@@ -14,6 +14,16 @@ section {
   &__title {
     width: $section-content-width;
 
+    font-weight: $fw-medium;
     font-size: $fs-medium;
+  }
+}
+
+.go-back {
+  font-family: $ff-medium;
+  font-size: $fs-xxxlarge;
+
+  a {
+    color: $light-color!important;
   }
 }

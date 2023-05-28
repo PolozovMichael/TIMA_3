@@ -184,7 +184,16 @@ section {
 }
 .section__title {
   width: 92%;
+  font-weight: 500;
   font-size: 1.8rem;
+}
+
+.go-back {
+  font-family: "SoraMedium", sans-serif;
+  font-size: 3.4rem;
+}
+.go-back a {
+  color: #FFFFFF !important;
 }
 
 .navbar__item {
@@ -412,6 +421,23 @@ section {
   border-bottom: none !important;
 }
 
+.reverse .ant-table-thead > tr > td {
+  border: none !important;
+  background: red;
+}
+.reverse .ant-table-row .ant-table-cell:first-child {
+  color: #FFFFFF !important;
+}
+.reverse .ant-table-row:last-child .ant-table-cell {
+  border-bottom: none !important;
+}
+.reverse .ant-table-cell {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2) !important;
+}
+.reverse .ant-table-cell:before {
+  background: transparent !important;
+}
+
 .ant-table {
   background: transparent !important;
   font-family: "SoraRegular", sans-serif !important;
@@ -420,8 +446,11 @@ section {
   color: #FFFFFF !important;
   background: transparent !important;
 }
-.ant-table-cell {
-  color: #6EFCB1;
+.ant-table-cell, .ant-table-cell a {
+  color: #6EFCB1 !important;
+}
+.ant-table-cell a:hover {
+  color: #2db274 !important;
 }
 .ant-table-cell-row-hover {
   transition: all 0.3s ease;

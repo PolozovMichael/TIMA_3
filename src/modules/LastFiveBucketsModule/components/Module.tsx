@@ -6,6 +6,7 @@ import { useAddress } from "../../../hooks/useAddress";
 
 import LoaderComponent from "../../../components/LoaderComponent";
 import TableComponent from "../../../components/TableComponent";
+import { Link } from "react-router-dom";
 
 const Module = () => {
   const {
@@ -19,6 +20,7 @@ const Module = () => {
       title: "Bucket Name",
       dataIndex: "bucket_name",
       key: "bucket_name",
+      render: (text) => <Link to={`/buckets/${text}`}>{text}</Link>
     },
     {
       title: "Owner",
