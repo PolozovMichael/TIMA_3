@@ -11,4 +11,7 @@ export type {
 } from "./store";
 
 // async thunks
-export { login } from "./store/auth/authThunks";
+export {
+  login,
+  logout,
+} from "./store/auth/authSlice";

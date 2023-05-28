@@ -1,11 +1,11 @@
-import Header from "./Header";
-import Navbar from "./Navbar";
+import Header  from "./Header";
+import Content from "./Content/Content";
 
 const Aside = () => {
   return (
     <aside className="aside">
       <Header />
-      <Navbar />
+      <Content />
     </aside>
   );
 }

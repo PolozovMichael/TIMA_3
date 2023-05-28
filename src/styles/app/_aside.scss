@@ -6,7 +6,7 @@
   gap: 2rem;
 
   width: $aside-width;
-  height: 100vh;
+  height: 96vh;
   padding-top: $fs-xxlarge;
 
   &__header {
@@ -30,54 +30,5 @@
       font-size: $fs-large;
       color: $silver-color;
     }
-  }
-}
-.navbar {
-  height: 100%;
-
-  box-sizing: border-box;
-
-  @include flex-column;
-  gap: 2rem;
-
-  padding: $fs-xxlarge $fs-xxlarge 0 0;
-
-  border-radius: 0 3rem 3rem 0;
-  border-top: 1px solid;
-  border-image-source: linear-gradient(368deg, rgba(255, 255, 255, 0.2) 2.09%, rgba(255, 255, 255, 0) 99.19%);
-
-  box-shadow: 5px -5px 4px 0px #00000026, 0px 4px 4px 0px #00000040;
-  background: linear-gradient(370deg, rgba(215, 255, 233, 0.135) -107.64%, rgba(196, 34, 253, 0.216753) -107.64%, rgba(255, 255, 255, 0.205) -107.61%, rgba(253, 255, 254, 0.1) -91.28%, rgba(255, 255, 255, 0) 116.63%);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(5px -5px 4px rgba(0, 0, 0, 0.15));
-  backdrop-filter: blur(12.5px);
-
-  &__item {
-    display: grid;
-    grid-template-columns: 3rem 100%;
-    align-items: center;
-    gap: $fs-xxsmall;
-
-    padding: $fs-regular;
-
-    border-radius: 12px;
-
-    color: $light-color;
-
-    &--active {
-      background: linear-gradient(450deg, #26E2B300 5%, #448c7a 95%);
-
-      font-weight: $fw-bold;
-      color: $primary-color;
-    }
-  }
-
-  &__icon-wrapper {
-    @include flex-center;
-  }
-
-  &__title {
-    @include flex-row;
-    align-items: center;
-    height: 100%;
   }
 }

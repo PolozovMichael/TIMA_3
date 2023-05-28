@@ -11,9 +11,7 @@ import {
 
 import Aside from "./Aside/Aside";
 
-const LazyAppRouter = lazy(() => {
-  return import("./Router.tsx");
-});
+const LazyAppRouter = lazy(() => import("./Router.tsx"));
 
 
 const App = () => {
