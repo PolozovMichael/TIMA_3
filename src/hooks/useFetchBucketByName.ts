@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react"
-import axios from "axios"
+import { useEffect, useState } from "react"
+import { API_URL } from "../api";
+import axios from "axios";
 
 interface BucketInfo {
   owner: string;
@@ -26,9 +27,6 @@ interface Data {
   bucket_info: BucketInfo;
 }
 
-const URL =
-  "https://gnfd-testnet-fullnode-tendermint-us.bnbchain.org/greenfield/storage/head_bucket/";
-
 export const useFetchBucketByName = (
   name: string
 ): {
@@ -44,7 +42,7 @@ export const useFetchBucketByName = (
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get<Data>(URL+name);
+      const response = await axios.get<Data>(API_URL + "/greenfield/storage/head_bucket/" + name);
       setData(response.data);
       setError(null);
     } catch (error: any) {

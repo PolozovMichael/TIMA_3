@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react"
-import axios from "axios"
+import { useEffect, useState } from "react"
+import { API_URL } from "../api";
+import axios from "axios";
 
 interface SPSData {
   sps: SPS[];
@@ -31,8 +32,6 @@ interface Pagination {
   total: string;
 }
 
-const URL = "https://gnfd-testnet-fullnode-tendermint-us.bnbchain.org/greenfield/storage_providers?pagination.count_total=true&pagination.reverse=true";
-
 export const useFetchSPS = (): {
   data: SPSData | null
   isLoading: boolean
@@ -46,7 +45,7 @@ export const useFetchSPS = (): {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get<SPSData>(URL);
+      const response = await axios.get<SPSData>(API_URL + "/greenfield/storage_providers?pagination.count_total=true&pagination.reverse=true");
       setData(response.data);
       setError(null);
     } catch (error: any) {

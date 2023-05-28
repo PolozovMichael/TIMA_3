@@ -59,7 +59,6 @@ const Module = () => {
   if (isLoading) return <LoaderComponent />;
 
 
-  console.log("sortedData", sortedData);
   return (
     <section className="section">
       <p className="section__title">Latest 5 Created Buckets</p>
@@ -71,6 +70,7 @@ const Module = () => {
           columns={columns}
           loading={isLoading}
           type="dashed"
+          pagination={false}
         />
       )}
     </section>

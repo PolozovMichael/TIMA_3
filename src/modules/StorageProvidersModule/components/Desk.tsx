@@ -53,11 +53,6 @@ const Desk = () => {
         )
       },
     },
-    {
-      title: "Endpoint",
-      dataIndex: "endpoint",
-      key: "endpoint",
-    },
   ];
   const dataSource: null | DataType[] = data && data?.sps.map(({
     description,
@@ -85,7 +80,9 @@ const Desk = () => {
       <p className="section__title">Storage Providers</p>
       {data && (
         <TableComponent
+          // @ts-ignore
           dataSource={dataSource}
+          // @ts-ignore
           columns={columns}
           loading={isLoading}
           footer={`A total of ${dataSource?.length} storage providers`}

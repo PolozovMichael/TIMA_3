@@ -3,7 +3,7 @@ import { Table } from "antd";
 interface TableComponentProps {
   dataSource: [];
   columns: [];
-  loading: boolean;
+  loading?: boolean;
   type?: string,
   footer?: string;
   pagination?: boolean;
@@ -23,7 +23,7 @@ const TableComponent = ({
       columns={columns}
       loading={loading}
       style={{ width: "100%" }}
-      footer={() => footer}
+      footer={() => footer ? footer : false}
       className={type}
       pagination={pagination && {
         position: [ "bottomCenter" ],

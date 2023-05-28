@@ -10,12 +10,11 @@ const Module = () => {
 
   // @ts-ignore
   const { data, isLoading } = useFetchBucketByName(bucketId);
-  console.log("data", data);
 
   if (isLoading) return <LoaderComponent />;
 
   const bucketData = data?.bucket_info;
-  console.log("bucketData", bucketData);
+
   const columns = [
     {
       dataIndex: "attribute",

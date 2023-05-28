@@ -10,12 +10,15 @@ const Auth = () => {
   const dispatch = useAppDispatch();
   const [ userAccount, setUserAccount ] = useState("");
 
+  // @ts-ignore
   let eth;
 
   if (typeof window !== "undefined") {
+    // @ts-ignore
     eth = window.ethereum;
   }
 
+  // @ts-ignore
   async function connectWallet(metamask = eth) {
     try {
       // check if metamask is installed
@@ -42,6 +45,7 @@ const Auth = () => {
 
 
   useEffect(() => {
+    // @ts-ignore
     const checkWalletConnect = async (metamask = eth) => {
       try {
         if (!metamask) {
