@@ -1,0 +1,19 @@
+section {
+  width: 100%!important;
+}
+
+.section {
+  @include flex-column;
+  @include flex-center;
+  gap: $fs-xxxlarge;
+
+  padding: 4rem 0 2rem 0;
+  background: linear-gradient(103.96deg, rgba(24, 26, 33, 0.8) 18.49%, rgba(37, 38, 39, 0.264) 66.82%);
+  border-radius: 37px;
+
+  &__title {
+    width: $section-content-width;
+
+    font-size: $fs-medium;
+  }
+}

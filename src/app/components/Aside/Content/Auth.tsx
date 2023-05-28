@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useAppDispatch } from "../../../../hooks/useAppDispatch";
 import { login, logout } from "../../../../redux";
 import ButtonComponent from "../../../../components/ButtonComponent";
+import { useAddress } from "../../../../hooks/useAddress";
 
 const Auth = () => {
   const dispatch = useAppDispatch();
@@ -63,12 +64,13 @@ const Auth = () => {
   }, [ eth ]);
 
 
+  const userWalletAddress = useAddress(userAccount);
   return (
     <div className="auth">
       {
         localStorage.getItem("address") ?
           <>
-            <span>{userAccount.substring(0, 6)}...{userAccount.substring(userAccount.length - 6)} </span>
+            <span>{userWalletAddress}</span>
             <br />
             <br />
             <ButtonComponent

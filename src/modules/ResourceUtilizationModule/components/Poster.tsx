@@ -7,9 +7,9 @@ const Poster = () => {
       <BannerComponent
         image={ResourceUtilizationPoster}
         title={
-          <span>Storage <br />Providers</span>
+          <span>Resource <br />Utilization</span>
         }
-        subtitle="Track the SP accounts on Greenfield with GreenfieldLab."
+        subtitle="View your current Resource  Utilization with GreenfieldLab"
       />
     </section>
   );

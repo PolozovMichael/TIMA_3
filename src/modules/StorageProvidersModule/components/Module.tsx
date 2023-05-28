@@ -1,11 +1,11 @@
 import Poster from "./Poster";
-import Table from "./Table";
+import Desk from "./Desk";
 
 const Module = () => {
   return (
     <>
       <Poster />
-      <Table />
+      <Desk />
     </>
   );
 }

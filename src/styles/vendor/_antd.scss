@@ -1,0 +1,99 @@
+// table
+.ant-table-wrapper {
+  width: $section-content-width !important;
+  padding: 2rem;
+
+  border-radius: 37px !important;
+
+  background: linear-gradient(100.03deg, rgba(215, 255, 233, 0.135) -107.64%, rgba(196, 34, 253, 0.216753) -107.64%, rgba(255, 255, 255, 0.205) -107.61%, rgba(253, 255, 254, 0.1) -91.28%, rgba(255, 255, 255, 0) 116.63%) !important;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(5px -5px 4px rgba(0, 0, 0, 0.15)) !important;
+  backdrop-filter: blur(12.5px) !important;
+
+}
+
+
+.solid {
+  .ant-table-cell {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2) !important;
+
+    &:before {
+      background: transparent!important;
+    }
+  }
+}
+
+.ant-table {
+  background: transparent !important;
+
+  font-family: $ff-regular !important;
+
+
+  &-thead tr th {
+    color: $light-color !important;
+
+    background: transparent !important;
+  }
+
+  &-cell {
+    color: $primary-color;
+  }
+
+  &-cell-row-hover {
+    transition: all .3s ease;
+    background: $dark-color !important;
+  }
+
+  &-footer {
+    width: 100% !important;
+
+    border: none !important;
+
+    background: transparent !important;
+
+    color: $silver-color !important;
+  }
+
+  &-tag {
+    width: 7rem;
+
+    border-radius: 20px;
+
+    background: rgba(111, 253, 178, 0.25);
+
+    text-align: center;
+    color: $primary-color;
+  }
+}
+
+// pagination
+.ant-pagination {
+  &-item {
+    border: none!important;
+
+    background: $dark-color !important;
+
+    a {
+      color: $primary-color !important;
+    }
+
+    &-active {
+      border: 1px solid $primary-color!important;
+    }
+  }
+
+  &-next, &-prev {
+    svg {
+      color: $primary-color;
+    }
+  }
+
+  &-disabled {
+    svg {
+      color: $dark-color!important;
+    }
+  }
+}
+
+.ant-typography {
+  color: $light-color!important;
+}

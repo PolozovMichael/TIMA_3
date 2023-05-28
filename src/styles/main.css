@@ -129,14 +129,13 @@ body {
   background-size: cover;
 }
 .app main {
-  height: 100vh;
-  margin-left: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  min-height: 100vh;
   width: 77vw;
+  margin-left: 20vw;
   padding: 6.12rem 0;
-}
-
-section {
-  width: 100% !important;
 }
 
 .aside {
@@ -167,6 +166,25 @@ section {
 .aside__title--small {
   font-size: 2rem;
   color: #CCCCCC;
+}
+
+section {
+  width: 100% !important;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.4rem;
+  padding: 4rem 0 2rem 0;
+  background: linear-gradient(103.96deg, rgba(24, 26, 33, 0.8) 18.49%, rgba(37, 38, 39, 0.264) 66.82%);
+  border-radius: 37px;
+}
+.section__title {
+  width: 92%;
+  font-size: 1.8rem;
 }
 
 .navbar__item {
@@ -308,6 +326,121 @@ section {
 }
 .button--primary:hover {
   color: #6EFCB1;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #6EFCB1;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+.ant-table-wrapper {
+  width: 92% !important;
+  padding: 2rem;
+  border-radius: 37px !important;
+  background: linear-gradient(100.03deg, rgba(215, 255, 233, 0.135) -107.64%, rgba(196, 34, 253, 0.216753) -107.64%, rgba(255, 255, 255, 0.205) -107.61%, rgba(253, 255, 254, 0.1) -91.28%, rgba(255, 255, 255, 0) 116.63%) !important;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(5px -5px 4px rgba(0, 0, 0, 0.15)) !important;
+  backdrop-filter: blur(12.5px) !important;
+}
+
+.solid .ant-table-cell {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2) !important;
+}
+.solid .ant-table-cell:before {
+  background: transparent !important;
+}
+
+.ant-table {
+  background: transparent !important;
+  font-family: "SoraRegular", sans-serif !important;
+}
+.ant-table-thead tr th {
+  color: #FFFFFF !important;
+  background: transparent !important;
+}
+.ant-table-cell {
+  color: #6EFCB1;
+}
+.ant-table-cell-row-hover {
+  transition: all 0.3s ease;
+  background: #222935 !important;
+}
+.ant-table-footer {
+  width: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  color: #CCCCCC !important;
+}
+.ant-table-tag {
+  width: 7rem;
+  border-radius: 20px;
+  background: rgba(111, 253, 178, 0.25);
+  text-align: center;
+  color: #6EFCB1;
+}
+
+.ant-pagination-item {
+  border: none !important;
+  background: #222935 !important;
+}
+.ant-pagination-item a {
+  color: #6EFCB1 !important;
+}
+.ant-pagination-item-active {
+  border: 1px solid #6EFCB1 !important;
+}
+.ant-pagination-next svg, .ant-pagination-prev svg {
+  color: #6EFCB1;
+}
+.ant-pagination-disabled svg {
+  color: #222935 !important;
+}
+
+.ant-typography {
+  color: #FFFFFF !important;
 }
 
 /*# sourceMappingURL=main.css.map */
